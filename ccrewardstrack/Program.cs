@@ -113,15 +113,34 @@ namespace ccrewardstrack
                     }
                 }
 
-            }
+            CreditCard myCreditCard = new CreditCard();
+                Console.WriteLine("Receive " + myCreditCard.cashBack + " cash back for all categories.");
 
-       
-            
-                   
+                Console.WriteLine("press \"enter\" to view credit card info");
+                Console.ReadLine();
+
+                using StreamReader sr = new StreamReader(file);
+
+                {
+                    Console.WriteLine(sr.ReadToEnd());
+                }
+
+                
+                Console.WriteLine("If you would like to input a differnt credit card hit \"enter\". If you would like to exit enter \"exit\"");
+                string answer = Console.ReadLine();
+
+                if (answer == "exit")
+                {
+                    break;
+                }
+                
+               
+
+            }while (true);
 
 
         }
 
     }
-
 }
+    
