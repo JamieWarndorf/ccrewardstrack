@@ -75,46 +75,43 @@ namespace ccrewardstrack
                     DateTime endDatePer4 = new DateTime(2022, 12, 31);
 
             if (dateTime >= startDatePer1 && dateTime <= endDatePer1)
-            {
-                Console.WriteLine("The reward category eligible for today is: " + rewardCat1);
-                TimeSpan t = (endDatePer1 - dateTime);
-                int days = (int)t.TotalDays;
-                {
-                    Console.WriteLine("There are " + days + " days until next reward category");
-                }
-            }
-            else if (dateTime >= startDatePer2 && dateTime <= endDatePer2)
-            {
-                Console.WriteLine("The reward category eligible for today is: " + rewardCat2);
-                TimeSpan t = (endDatePer2- dateTime);
-                int days = (int)t.TotalDays;
-                {
-                    Console.WriteLine("There are " + days + " days until next reward category");
-                }
-            }
-            else if (dateTime >= startDatePer3 && dateTime <= endDatePer3)
-            {
-                Console.WriteLine("The reward category eligible for today is: " + rewardCat3);
-                TimeSpan t = (endDatePer3 - dateTime);
-                int days = (int)t.TotalDays;
-                {
-                    Console.WriteLine("There are " + days + " days until next reward category");
-                }
-            }
-            else if (dateTime >= startDatePer4 && dateTime <= endDatePer4)
-            {
-                Console.WriteLine("The reward category eligible for today is: " + rewardCat4);
-                TimeSpan t = (endDatePer4 - dateTime);
-                int days = (int)t.TotalDays;
-                {
-                    Console.WriteLine("There are " + days + " days until next reward category");
-                }
+                    {
+                        Console.WriteLine("The reward category eligible for today is: " + rewardCat1);
+                        TimeSpan t = (endDatePer1 - dateTime);
+                        int days = (int)t.TotalDays;
+                        {
+                            Console.WriteLine("There are " + days + " days until next reward category");
+                        }
+                    }
+                    else if (dateTime >= startDatePer2 && dateTime <= endDatePer2)
+                    {
+                        Console.WriteLine("The reward category eligible for today is: " + rewardCat2);
+                        TimeSpan t = (endDatePer2 - dateTime);
+                        int days = (int)t.TotalDays;
+                        {
+                            Console.WriteLine("There are " + days + " days until next reward category");
+                        }
+                    }
+                    else if (dateTime >= startDatePer3 && dateTime <= endDatePer3)
+                    {
 
-                CreditCard myCreditCardReward = new CreditCard();
-
-
-                myCreditCardReward.cashBack();
-
+                        Console.WriteLine("The reward category eligible for today is: " + rewardCat3);
+                        TimeSpan t = (endDatePer3 - dateTime);
+                        int days = (int)t.TotalDays;
+                        {
+                            Console.WriteLine("There are " + days + " days until next reward category");
+                        }
+                    }
+                    else if (dateTime >= startDatePer4 && dateTime <= endDatePer4)
+                    {
+                        Console.WriteLine("The reward category eligible for today is: " + rewardCat4);
+                        TimeSpan t = (endDatePer4 - dateTime);
+                        int days = (int)t.TotalDays;
+                        {
+                            Console.WriteLine("There are " + days + " days until next reward category");
+                        }
+                    }
+                }
 
             }
 
