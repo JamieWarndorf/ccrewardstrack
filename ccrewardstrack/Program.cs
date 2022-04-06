@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,39 +7,58 @@ using System.Threading.Tasks;
 namespace ccrewardstrack
 {
     public class Program
-        {
-   
-      
-            
-       public static void Main(string[] args)
+    {
         
-     
+        
+        
+
+        static void Main(string[] args)
+
+
+
         {
-            Console.WriteLine("Enter a nickname for your credit card: ");
+            do
+            {
 
-            string creditCardName = Console.ReadLine();
+                string file = @"C:\Users\Jamie\source\repos\ccrewardstrack\ccrewardstrack\cardinfo.txt";
+                using StreamWriter sw = new StreamWriter(file);
 
-            Console.WriteLine("Enter credit card expiration date in format mm/yy: ");
+                {
+                    Console.WriteLine("Enter a nickname for your credit card: ");
 
-            string expDate = Console.ReadLine();
-                                       
-            CreditCard creditCard = new CreditCard();
+                    string creditCardName = Console.ReadLine();
+                    sw.WriteLine("Credit Card Name: " + creditCardName);
 
-            Console.WriteLine("Enter reward category for January-March: ");
 
-            string rewardCat1 = Console.ReadLine();
+                    Console.WriteLine("Enter credit card expiration date in format mm/yy: ");
 
-            Console.WriteLine("Enter reward category for April-June: ");
+                    string expDate = Console.ReadLine();
+                    sw.WriteLine("Expiration Date: " + expDate);
 
-            string rewardCat2 = Console.ReadLine();
 
-            Console.WriteLine("Enter reward category for July-September: ");
+                    Console.WriteLine("Enter reward category for January-March: ");
 
-            string rewardCat3 = Console.ReadLine();
+                    string rewardCat1 = Console.ReadLine();
+                    sw.WriteLine("January-March Rewards: " + rewardCat1);
 
-            Console.WriteLine("Enter reward category for October-December: ");
 
-            string rewardCat4 = Console.ReadLine();
+                    Console.WriteLine("Enter reward category for April-June: ");
+
+                    string rewardCat2 = Console.ReadLine();
+                    sw.WriteLine("April-June Rewards: " + rewardCat2);
+
+                    Console.WriteLine("Enter reward category for July-September: ");
+
+                    string rewardCat3 = Console.ReadLine();
+                    sw.WriteLine("July-September Rewards: " + rewardCat3);
+
+                    Console.WriteLine("Enter reward category for October-December: ");
+
+                    string rewardCat4 = Console.ReadLine();
+                    sw.WriteLine("October-December Rewards: " + rewardCat4);
+
+                    sw.Close();
+
 
             DateTime dateTime = DateTime.Today;
 
