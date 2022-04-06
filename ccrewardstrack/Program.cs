@@ -60,20 +60,19 @@ namespace ccrewardstrack
                     sw.Close();
 
 
-            DateTime dateTime = DateTime.Today;
+            
+                    DateTime dateTime = DateTime.Today;
 
 
-            DateTime startDatePer1 = new DateTime(2022,1,1);
-            DateTime endDatePer1 = new DateTime(2022, 3, 31);
-            DateTime startDatePer2 = new DateTime(2022, 4, 1);
-            DateTime endDatePer2 = new DateTime(2022, 6, 30);
+                    DateTime startDatePer1 = new DateTime(2022, 1, 1);
+                    DateTime endDatePer1 = new DateTime(2022, 3, 31);
+                    DateTime startDatePer2 = new DateTime(2022, 4, 1);
+                    DateTime endDatePer2 = new DateTime(2022, 6, 30);
 
-            DateTime startDatePer3 = new DateTime(2022, 7, 1);
-            DateTime endDatePer3 = new DateTime(2022, 9, 30);
-            DateTime startDatePer4 = new DateTime(2022, 10, 1);
-            DateTime endDatePer4 = new DateTime(2022, 12, 31);
-
-
+                    DateTime startDatePer3 = new DateTime(2022, 7, 1);
+                    DateTime endDatePer3 = new DateTime(2022, 9, 30);
+                    DateTime startDatePer4 = new DateTime(2022, 10, 1);
+                    DateTime endDatePer4 = new DateTime(2022, 12, 31);
 
             if (dateTime >= startDatePer1 && dateTime <= endDatePer1)
             {
